@@ -4,6 +4,10 @@ import java.io.*;
 import java.util.List;
 
 public class Main {
+    public Main() {
+        new File("src/test/output/").mkdirs();
+    }
+
     private void baseTest(String out, int n, boolean shouldFail) {
         baseTest(out, n, 60000, 60000, shouldFail);
     }
